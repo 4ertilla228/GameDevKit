@@ -8,7 +8,7 @@ public abstract class EnemySpawner {
     // бизнес
     public void spawnAndAttack() {
         System.out.println("——— Система спавна активирована ———");
-        // делегируем создание объекта фабричному методу
+        // передаём задачи создание объекта фабричному методу
         Enemy enemy = createEnemy();
         // используем продукт
         enemy.attack();
